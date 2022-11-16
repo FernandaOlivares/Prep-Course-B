@@ -1,0 +1,32 @@
+2. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos 
+como si se lo estuvieras explicando a un niño de 12 años.
+Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+* Variables: Es un cosa (valor) que nosotros creamos y queremos guardar para poder utilizar más tarde.
+Puede ser un nombre, número, frase, oración, lógica, de esxistencia o asociación.
+Ejemplo Strings: 
+var nombrePersonal = 'Fernanda'
+Ejemplo Numbers:
+var numeroNegativo = -9
+Ejemplo Boolean:
+var soyFeliz = true
+
+
+* Strings; // Es un tipo de variable, y se distingue por ser una cadena de texto entre comillas simples o dobles.
+Ejemplo: var colorAuto = 'negro'
+
+* Booleans; // Es una variable que tendré un valor o verdadero o falso.
+Ejemplo: var soyEstudiante = true
+
+* Undefined; // Es un tipo de variable que muestra que eso que buscas no existe, porque no se ha creado o no le has otorgado
+un valor. Esta configurada por Javascript.
+Ejemplo: console.log (algunaVariableSinCrear);
+
+* Null: Es una elemento existente, sin un valor otorgado, ese valos lo genera el desarrollador en algún momento. 
+
+* Operadores; // Son como las operaciones matematicas, están las básicas que conocemos (+-/* =), y también están
+% que devuelve el residuo de una división.
+
+* `==` vs. `===`; // Son operadores de comparación, pero la gran direcencia que el doble solo compara que el dato sea "igual a",
+en cambio el triple compara el tipo de tado, devolviendo si son exactamente iguales o no. Por lo que es importante siempre usar
+el triple igual, en vez del doble ingual.
