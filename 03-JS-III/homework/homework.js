@@ -14,6 +14,7 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
+
 }
 
 function elevaAlCuadrado(array){
