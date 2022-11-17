@@ -7,7 +7,12 @@
 function imprimirSumaNumeros() {
     // Imprime la suma de los números del 1 al 10
     // Pista: usa un acumulador
-    // Tu código:
+    // Tu código: REVISAR
+    var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var suma = numeros.reduce(function(acumulador, elemento) {
+	return acumulador + elemento;
+    },0);
+    return suma;
 }
 
 function encuentraPares(array){
