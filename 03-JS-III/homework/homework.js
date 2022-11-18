@@ -19,8 +19,15 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
-
+let arraydepares = [];
+  for(let i = 0; i < array.length ; i++){
+  if(array[i] % 2 == 0){
+      arraydepares.push(array[i]);
+    }
+  }
+  return arraydepares;
 }
+
 
 function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
