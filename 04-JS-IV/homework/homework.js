@@ -65,11 +65,11 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  If (usuario!=null) {
-  return true;
+  if (usuario.email != null) {
+    return true;
+  } else {
+  return false;
   }
-  else
-    return false;
 }
 
 function tienePropiedad (objeto, propiedad) {
@@ -77,6 +77,12 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (objeto [propiedad] != null) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function verificarPassword (usuario, password) {
@@ -84,12 +90,18 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (password === usuario.password) {
+    return true;
+  } else
+  return false;
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario.password = nuevaPassword
+  return usuario;
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
@@ -97,6 +109,8 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+  usuario.amigos.push(nuevoAmigo)
+  return usuario;
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -105,6 +119,10 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  usuarios.forEach(element => {
+    element.esPremium = true;
+  });
+  return usuarios;
 }
 
 function sumarLikesDeUsuario (usuario) {
