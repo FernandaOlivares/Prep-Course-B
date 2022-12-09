@@ -28,14 +28,14 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  /*var suma = 0
+  var suma = 0
   for (var i = 0 ; i < numeros.length; i++) {
     suma = suma + numeros[i];
   }
-  return cb(suma); 
-  */
-  var suma = numeros.reduce ((acum, next) => acum + next);
+  cb(suma) 
+  /*var suma = numeros.reduce ((acum, next) => acum + next);
   cb(suma);
+  */
   //Acá no piden devolver nada, en caso que se deba devoler, agregar: return cb(suma);
 }
 
