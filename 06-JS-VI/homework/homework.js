@@ -28,32 +28,42 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  var suma = 0
+  /*var suma = 0
   for (var i = 0 ; i < numeros.length; i++) {
     suma = suma + numeros[i];
   }
-  return suma; 
-}//REVISAR
+  return cb(suma); 
+  */
+  var suma = numeros.reduce ((acum, next) => acum + next);
+  cb(suma);
+  //Acá no piden devolver nada, en caso que se deba devoler, agregar: return cb(suma);
+}
 
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-} //REVISAR
+  array.forEach(element => {
+    cb(element);
+  });
+} 
 
 function map(array, cb) {
   // Crea un nuevo array
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  var nuevoArreglo = array.map((element) => cb(element));
+  return nuevoArreglo;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  
+  var filtrados = array.filter ((elem) => elem[0].toUpperCase() === 'A');
+  return filtrados;
 }
 
 // No modificar nada debajo de esta línea
